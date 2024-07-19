@@ -1,0 +1,56 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 300px;
+    margin-top: 200px;
+    background:rgb(65, 92, 64);
+    padding-bottom: 10px;
+    
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23px;
+    margin-top: 10px;
+}
+.text{
+    font-size: 30px;
+}
+
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+     
+}
+
+.input{
+    display: flex;
+    align-items: center;
+}
+.input img{
+    margin: 0px 20px;
+}
+
+.input input{
+    height: 20px;
+    width: 200px;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 40px ;
+    
+}
+
+.submit-container button{
+    background-color: darkgoldenrod;
+    cursor: pointer;
+}

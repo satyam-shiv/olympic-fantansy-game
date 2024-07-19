@@ -1,0 +1,26 @@
+ul{
+    display: flex;
+    gap: 70px;
+}
+
+li{
+    list-style-type: none;
+}
+ 
+nav{
+    background-color: rgb(193, 126, 44);
+    font-size: 20px;
+    padding: 10px;
+    color: aliceblue;
+    display: flex;
+    gap: 450px;
+}
+
+
+.co{
+    color:darkmagenta
+}
+
+.username{
+    color: black;
+}
