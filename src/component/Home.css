@@ -1,0 +1,26 @@
+.logo3 {
+  background-image: url('./logo.jpg');
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 597px; /* Set the minimum height of the container */
+ 
+  
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 50px; 
+  border-radius: 8px;
+  max-width: 400px; 
+  margin-right: 20px;
+  height: 300px;
+  margin-top:30px ;
+}
+
+.paragraph {
+  font-size: 18px; /* Adjust font size as needed */
+  color: white; /* Ensure text color contrasts with background */
+  font-style: italic; /* Italicize the text */
+  line-height: 1.6;
+}

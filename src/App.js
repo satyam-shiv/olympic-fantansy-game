@@ -1,21 +1,22 @@
 import './App.css';
-import Navbar from './component/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from "./component/Login";
+import Login from './component/Login';
+import Games from './component/Games';
+import Home from './component/Home'; 
+
 import { useState } from 'react';
 
 function App() {
-     
   const [username, setUsername] = useState('');
 
   return (
-    
     <Router>
-        <Navbar username={username}/>
-         <Routes>
-            <Route path='/login' element={<Login  setUsername={setUsername}/>}/>
-         </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home username={username} />} />
+        <Route path="/login" element={<Login setUsername={setUsername} />} />
+        <Route path="/games" element={<Games />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 import email from '../Assets/email.png';
 import password from '../Assets/password.png';
 import person from '../Assets/person.png';
@@ -8,6 +9,7 @@ const Login = ({ setUsername }) => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
+  const navigate = useNavigate();
 
   const checkInputs = () => {
     const nameValue = nameRef.current.value;
@@ -27,15 +29,16 @@ const Login = ({ setUsername }) => {
       emailValue === targetValues.email &&
       passwordValue === targetValues.password
     ) {
-      alert('Successful!'); // Show success message
+      
       setUsername(targetValues.name);
+      navigate('/games');
     } else {
-      alert('Invalid inputs. Please try again.'); // Show error message
+      alert('Invalid inputs. Please try again.'); 
     }
   };
 
   return (
-    <div>
+    <div className='mainP'>
       <div className="container">
         <div className="header">
           <div className="text">Signup</div>

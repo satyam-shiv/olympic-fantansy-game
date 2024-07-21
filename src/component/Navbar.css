@@ -1,26 +1,30 @@
-ul{
-    display: flex;
-    gap: 70px;
-}
-
-li{
-    list-style-type: none;
-}
- 
-nav{
-    background-color: rgb(193, 126, 44);
+nav {
+    background: transparent;
     font-size: 20px;
     padding: 10px;
     color: aliceblue;
     display: flex;
-    gap: 450px;
+    justify-content: center;
 }
 
-
-.co{
-    color:darkmagenta
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.username{
-    color: black;
+.co {
+    color: darkmagenta;
+    font-style: italic;
+}
+
+.username {
+    color: white;
+}
+
+.username span{
+    color: darkorchid;
+    font-style: oblique;
+    
 }
