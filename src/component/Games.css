@@ -2,14 +2,115 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background:linear-gradient(to right, #000428, #004e92); 
-  display: flex;
-  margin: 0;
-  color: white;
-  font-size: 2rem;
+  background: linear-gradient(to right, #000428, #004e92);
+  
+  
+  
+  color: rgb(24, 5, 5);
+  font-size: 1rem;
 }
 
-.navbar{
+.navbar {
   display: flex;
-  gap: 70px;
+  gap: 50px; /* Reduced gap for more compact layout */
+  background-color: gray;
+  padding: 0.25rem 0.5rem; /* Reduced padding for shorter height */
+ 
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.menu-item:hover {
+  background-color: #333; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.dropdown-box {
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 4px;
+  width: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute; /* Ensure dropdown appears just below the menu item */
+  top: 100%; /* Position below the menu item */
+  left: 0; /* Align left edge with the menu item */
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: #454040;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #9e1818;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.action-button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  background-color: #9e1818;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #d42b2b;
+}
+
+.selected-players-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.selected-players {
+  margin-left: 20px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+}
+
+.navbar-right {
+  margin-left: auto;
+  padding: 8px 16px;
+  font-weight: bold; /* Make text bold */
+  font-size: 1.2rem; /* Optional: adjust the font size */
+  color: rgb(181, 235, 88); /* Optional: set the text color */
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.base{
+  margin-top: 300px;
+  background-color: aqua;
+  height: 114px;
+}
+
+.center{
+  text-align: center;
+}
+
+.score{
+  color: #d42b2b;
+  font-weight: bold;
 }
